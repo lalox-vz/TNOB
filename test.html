@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="estilo.css">
+	<title>Test</title>
+</head>
+<body>
+
+	<!-- NAVBAR -->
+
+	<div class="container" style="width: 100%; position: absolute; max-width: 1370px; z-index: 0;">
+		<div class="row text-center">
+			<div class="col-12 py-3" style="background-color: #000; width: 100%; height: 100%;">
+				<img id="LOGO" class="img-fluid" src="img/TNOB2.png" alt="" style="width: 120px; left: 5%; top: 3%;">
+				<!--<img class="img-fluid" src="img/TNOB2.png" alt="" style="width: 120px; right: 5%; top: 10%;"> -->
+				<ul id="NAVBAR" class="list-inline" style="margin-top: 65px; align-items: center; ">
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">HOME</a>
+					</li>
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">PRODUCT</a>
+					</li>
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">PORTFOLIO</a>
+					</li>
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">BUILD YOUR OWN</a>
+					</li>
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">FAQ</a>
+					</li>
+					<li class="list-inline-item mx-3">
+						<a href="#" style="color: white; text-decoration: none;">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- END NAVBAR -->
+
+
+	<!-- SIDEBAR -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="dropdown">
+		<a href="#" onclick="myBody()" class="dropbtn">BODY</a>
+		<div class="dropdown-content" id="myDropdown1" >
+	    	<ul>
+				<li class="active" id="fj40"><a href="#">FJ40</a></li>
+				<li id="fj44"><a href="#">FJ44</a></li>
+			</ul>
+  		</div>
+  	</div>
+  		
+  		<hr>
+
+  	<div class="dropdown">
+  		<a href="#" onclick="myColor()" class="dropbtn">COLOR</a>
+		<div class="dropdown-content" id="myDropdown2">
+	    	<ul>
+				<li id="orange"><a href="#">Naranja</a></li>
+				<li id="azul"><a href="#">Azul</a></li>
+				<li id="azulClaro"><a href="#">Azul Claro</a></li>
+				<li id="blanco"><a href="#">Blanco</a></li>
+				<li id="verde"><a href="#">Verde</a></li>
+				<li id="ocre"><a href="#">Ocre</a></li>
+				<li id="gris"><a href="#">Gris</a></li>
+				<li id="negro" class="active"><a href="#">Negro</a></li>
+			</ul>
+  		</div>
+  	</div>
+  		
+  		<hr>
+
+  	<div class="dropdown">
+  		<a href="#" onclick="myRoof()" class="dropbtn">ROOF</a>
+		<div class="dropdown-content" id="myDropdown3">
+	    	<ul>
+	    		<li id="techoBikini" class="active"><a href="#" style="font-size: 15px;">Hand-Tailor Bikini Top</a></li>
+	    		<li id="techoCompleto"><a href="#" style="font-size: 15px;">Hand-Tailor Insulated Soft Top</a></li>
+	    	</ul>
+  		</div>
+  	</div>
+  		
+  		<hr>
+
+  	<div class="dropdown">
+  		<a href="#" onclick="myTire()" class="dropbtn">TIRE</a>
+		<div class="dropdown-content" id="myDropdown4">
+	    	<ul>
+	    		<li id="newschool" class="active"><a href="#" style="font-size: 15px;">New School Wheel</a></li>
+	    		<li id="oldschool"><a href="#" style="font-size: 15px;">Old School Wheel</a></li>
+	    	</ul>
+	    	<hr>
+	    	<ul>
+	    		<li id="goodrich" class="active"><a href="#" style="font-size: 15px;">BF Goodrich All Terrain</a></li>
+	    		<li id="mt"><a href="#" style="font-size: 15px;">M/T</a></li>
+	    	</ul>
+  		</div>
+	</div>
+		
+		<hr>
+
+	<div class="dropdown">
+  		<a href="#" onclick="myAccessories()" class="dropbtn">ACCESSORIES</a>
+		<div class="dropdown-content" id="myDropdown5">
+	    	<ul>
+	    		<li id="none" class="active"><a href="#" style="font-size: 13px;">None</a></li>
+	    		<li id="poweredstep"><a href="#" style="font-size: 20px;">Powered Step</a></li>
+	    	</ul>
+  		</div>
+	</div>
+		
+		<hr>
+	<div class="dropdown">
+  		<a href="#" onclick="myTailgate()" class="dropbtn">TAILGATE</a>
+		<div class="dropdown-content" id="myDropdown6">
+	    	<ul>
+	    		<li id="dropdowndoor" class="active"><a href="#" style="font-size: 20px;">Drop Down</a></li>
+	    		<li id="bifold"><a href="#" style="font-size: 20px;">BI-FOLD</a></li>
+	    	</ul>
+  		</div>
+  	</div>
+  		<hr>
+  	<div class="dropdown">
+  		<a href="#" onclick="myLight()" class="dropbtn">LIGHTS</a>
+		<div class="dropdown-content" id="myDropdown7">
+	    	<ul>
+	    		<li id="newschoolheadlight" class="active"><a href="#" style="font-size: 15px;">Regular Headlight</a></li>
+	    		<li id="milledheadlight"><a href="#" style="font-size: 15px;">LED Headlight</a></li>
+	    	</ul>
+	    	<hr>
+	    	<ul>
+	    		<li id="noneledFRONT"><a href="#" style="font-size: 10px;">NONE</a></li>
+	    		<li id="frontledbar"><a href="#" style="font-size: 15px;">FRONT LED BAR</a></li>
+	    	</ul>
+	    	<hr>
+	    	<ul>
+	    		<li id="noneledBACK"><a href="#" style="font-size: 10px;">NONE</a></li>
+	    		<li id="backledbar"><a href="#" style="font-size: 15px;">BACK LED BAR</a></li>
+	    	</ul>
+  		</div>
+  	</div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<button onclick="openNav()">EDIT</button>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+ 	
+ <!-- FJ40 -->
+
+ 	<!-- SIDE -->
+
+ 		<!-- BODY -->
+		<img class="show" id="img1" src="img/1.png" alt="">
+		<img class="show" id="img3" src="img/3.png" alt="">
+		<img class="show" id="img4" src="img/4.png" alt="">
+		<img class="show" id="img5" src="img/5.png" alt="">
+		<img class="show" id="img6" src="img/6.png" alt="">
+		<!-- END BODY -->
+
+ 		<!-- COLORS -->
+		<img class="hide" id="imga" src="img/azul.png" alt="">
+		<img class="hide" id="imgo" src="img/orange.png" alt="">
+		<img class="hide" id="imgac" src="img/azulclaro.png" alt="">
+		<img class="hide" id="imgbl" src="img/blanco.png" alt="">
+		<img class="hide" id="imgv" src="img/verde.png" alt="">
+		<img class="hide" id="imgoc" src="img/ocre.png" alt="">
+		<img class="hide" id="imgg" src="img/gris.png" alt="">
+		<img class="show" id="imgn" src="img/negro.png" alt="">
+		<!-- END COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj40-tc" src="img/techoCompletoNegro.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj40-Wheel" src="img/fj40-Oldschool.png" alt="">
+		<img class="hide" id="fj40-Tire" src="img/fj40-MT.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- ACCESSORIES -->
+		<img class="hide" id="fj40-PStep" src="img/fj40-poweredStep.png" alt="">
+		<!-- FIN ACCESSORIES -->
+
+	<!-- END SIDE -->
+
+	<!-- FRONT -->
+
+		<!-- BODY -->
+		<img class="hide" id="imgfj40front-1" src="img/fj40-front1.png" alt="" >
+		<img class="hide" id="imgfj40front-2" src="img/fj40-front2.png" alt="" >
+		<img class="hide" id="imgfj40front-3" src="img/fj40-front3.png" alt="" >
+		<img class="hide" id="imgfj40front-4" src="img/fj40-front4.png" alt="" >
+		<!-- END BODY -->
+
+		<!-- COLORS -->
+		<img class="hide" id="imgfj40front-n" src="img/fj40-frontNegro.png" alt="" >
+		<img class="hide" id="imgfj40front-a" src="img/fj40-frontAzul.png" alt="">
+		<img class="hide" id="imgfj40front-ac" src="img/fj40-frontAzulclaro.png" alt="">
+		<img class="hide" id="imgfj40front-bl" src="img/fj40-frontBlanco.png" alt="">
+		<img class="hide" id="imgfj40front-g" src="img/fj40-frontGris.png" alt="">
+		<img class="hide" id="imgfj40front-oc" src="img/fj40-frontOcre.png" alt="">
+		<img class="hide" id="imgfj40front-o" src="img/fj40-frontOrange.png" alt="">
+		<img class="hide" id="imgfj40front-v" src="img/fj40-frontVerde.png" alt="">
+		<!-- END COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj40-frontTechocompleto" src="img/fj40-frontTechocompleto.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj40-frontTire" src="img/fj40-frontMT.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- LIGHT -->
+		<img class="hide" id="fj40-frontLedbar" src="img/fj40-frontLedbar.png" alt="">
+		<img class="hide" id="fj40-frontHL" src="img/fj40-frontLedHeadlight.png" alt="">
+		<!-- END LIGHT -->
+
+	<!-- END FRONT -->
+
+	<!-- BACK -->
+
+		<!-- BODY -->
+		<img class="hide" id="imgfj40back-1" src="img/fj40-back1.png" alt="" style="">
+		<img class="hide" id="imgfj40back-2" src="img/fj40-back2.png" alt="" style="">
+		<img class="hide" id="imgfj40back-3" src="img/fj40-back3.png" alt="" style="">
+		<img class="hide" id="imgfj40back-4" src="img/fj40-back4.png" alt="" style="">
+		<img class="hide" id="imgfj40back-5" src="img/fj40-back5.png" alt="" style="">
+		<img class="hide" id="imgfj40back-6" src="img/fj40-back6.png" alt="" style="">
+		<!-- BODY -->
+
+		<!-- COLORS -->
+		<img class="hide" id="imgfj40back-n" src="img/fj40-backNegro.png" alt="" >
+		<img class="hide" id="imgfj40back-a" src="img/fj40-backAzul.png" alt="">
+		<img class="hide" id="imgfj40back-ac" src="img/fj40-backAzulclaro.png" alt="">
+		<img class="hide" id="imgfj40back-bl" src="img/fj40-backBlanco.png" alt="">
+		<img class="hide" id="imgfj40back-g" src="img/fj40-backGris.png" alt="">
+		<img class="hide" id="imgfj40back-oc" src="img/fj40-backOcre.png" alt="">
+		<img class="hide" id="imgfj40back-o" src="img/fj40-backOrange.png" alt="">
+		<img class="hide" id="imgfj40back-v" src="img/fj40-backVerde.png" alt="">
+		<!-- END COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj40-backTechocompleto" src="img/fj40-backTechocompleto.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj40-backWheel" src="img/fj40-backOldschool.png" alt="">
+		<img class="hide" id="fj40-backTire" src="img/fj40-backMT1.png" alt="">
+		<img class="hide" id="fj40-backTire2" src="img/fj40-backMT2.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- TAILGATE -->
+		<img class="hide" id="fj40-backDoor" src="img/fj40-backDoor.png" alt="">
+		<!-- END TAILGATE -->
+
+		<!-- LIGHT -->
+		<img class="hide" id="fj40-backLedbar" src="img/fj40-backLedbar.png" alt="">
+		<!-- END LIGHT -->
+
+	<!-- END BACK -->
+
+	<!-- BAR -->
+
+	<ul>
+		<li id="fj40front" class="">
+				<div class="front" >
+					<a href="#" >
+						<img class="show" id="imgfj40frontSIDE-1" src="img/fj40-front1.png" alt="" style="">
+						<img class="show" id="imgfj40frontSIDE-2" src="img/fj40-front2.png" alt="" style="">
+						<img class="show" id="imgfj40frontSIDE-3" src="img/fj40-front3.png" alt="" style="">
+						<img class="show" id="imgfj40frontSIDE-4" src="img/fj40-front4.png" alt="" style="">
+						<!-- COLORS -->
+						<img class="show" id="imgfj40frontSIDE-n" src="img/fj40-frontNegro.png" alt="" style="">
+						<img class="hide" id="imgfj40frontSIDE-a" src="img/fj40-frontAzul.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-ac" src="img/fj40-frontAzulclaro.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-bl" src="img/fj40-frontBlanco.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-g" src="img/fj40-frontGris.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-oc" src="img/fj40-frontOcre.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-o" src="img/fj40-frontOrange.png" alt="">
+						<img class="hide" id="imgfj40frontSIDE-v" src="img/fj40-frontVerde.png" alt="">
+						<!-- END COLORS -->
+
+						<!-- ROOF -->
+						<img class="hide" id="fj40-frontTechocompletoSIDE" src="img/fj40-frontTechocompleto.png" alt="">
+						<!-- END ROOF -->
+
+						<!-- WHEEL/TIRE -->
+						<img class="hide" id="fj40-frontTireSIDE" src="img/fj40-frontMT.png" alt="">
+						<!-- END WHEEL/TIRE -->
+
+						<!-- LIGHT -->
+						<img class="hide" id="fj40-frontLedbarSIDE" src="img/fj40-frontLedbar.png" alt="">
+						<img class="hide" id="fj40-frontHLSIDE" src="img/fj40-frontLedHeadlight.png" alt="">
+						<!-- END LIGHT -->
+					</a>
+				</div>
+		</li>	
+
+		<li id="fj40side" class="active">
+				<div class="side" >
+					<a href="#" >
+						<img class="show" id="img1-side" src="img/1.png" alt="">
+						<img class="show" id="img3-side" src="img/3.png" alt="">
+						<img class="show" id="img4-side" src="img/4.png" alt="">
+						<img class="show" id="img5-side" src="img/5.png" alt="">
+						<img class="show" id="img6-side" src="img/6.png" alt="">
+						<!-- COLORS -->
+						<img class="show" id="imgn-side" src="img/negro.png" alt="">
+						<img class="hide" id="imga-side" src="img/azul.png" alt="">
+						<img class="hide" id="imgo-side" src="img/orange.png" alt="">
+						<img class="hide" id="imgac-side" src="img/azulclaro.png" alt="">
+						<img class="hide" id="imgbl-side" src="img/blanco.png" alt="">
+						<img class="hide" id="imgv-side" src="img/verde.png" alt="">
+						<img class="hide" id="imgoc-side" src="img/ocre.png" alt="">
+						<img class="hide" id="imgg-side" src="img/gris.png" alt="">
+						<!-- END COLORS -->
+
+						<!-- ROOF -->
+						<img class="hide" id="fj40-tc-side" src="img/techoCompletoNegro.png" alt="">
+						<!-- END ROOF -->
+
+						<!-- WHEEL/TIRE -->
+						<img class="hide" id="fj40-Wheel-side" src="img/fj40-Oldschool.png" alt="">
+						<img class="hide" id="fj40-Tire-side" src="img/fj40-MT.png" alt="">
+						<!-- END WHEEL/TIRE -->
+
+						<!-- ACCESSORIES -->
+						<img class="hide" id="fj40-PStep-side" src="img/fj40-poweredStep.png" alt="">
+						<!-- FIN ACCESSORIES -->
+					</a>
+				</div>
+		</li>
+
+		<li id="fj40back" class="">
+				<div class="back"  >
+					<a href="#" >
+						<img class="show" id="imgfj40backSIDE-1" src="img/fj40-back1.png" alt="" style="">
+						<img class="show" id="imgfj40backSIDE-2" src="img/fj40-back2.png" alt="" style="">
+						<img class="show" id="imgfj40backSIDE-3" src="img/fj40-back3.png" alt="" style="">
+						<img class="show" id="imgfj40backSIDE-4" src="img/fj40-back4.png" alt="" style="">
+						<img class="show" id="imgfj40backSIDE-5" src="img/fj40-back5.png" alt="" style="">
+						<img class="show" id="imgfj40backSIDE-6" src="img/fj40-back6.png" alt="" style="">
+						<!-- COLORS -->
+						<img class="show" id="imgfj40backSIDE-n" src="img/fj40-backNegro.png" alt="" style="">
+						<img class="hide" id="imgfj40backSIDE-a" src="img/fj40-backAzul.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-ac" src="img/fj40-backAzulclaro.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-bl" src="img/fj40-backBlanco.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-g" src="img/fj40-backGris.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-oc" src="img/fj40-backOcre.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-o" src="img/fj40-backOrange.png" alt="">
+						<img class="hide" id="imgfj40backSIDE-v" src="img/fj40-backVerde.png" alt="">
+						<!-- END COLORS -->
+
+						<!-- ROOF -->
+						<img class="hide" id="fj40-backTechocompletoSIDE" src="img/fj40-backTechocompleto.png" alt="">
+						<!-- END ROOF -->
+
+						<!-- WHEEL/TIRE -->
+						<img class="hide" id="fj40-backWheelSIDE" src="img/fj40-backOldschool.png" alt="">
+						<img class="hide" id="fj40-backTireSIDE" src="img/fj40-backMT1.png" alt="">
+						<img class="hide" id="fj40-backTire2SIDE" src="img/fj40-backMT2.png" alt="">
+						<!-- END WHEEL/TIRE -->
+
+						<!-- TAILGATE -->
+						<img class="hide" id="fj40-backDoorSIDE" src="img/fj40-backDoor.png" alt="">
+						<!-- END TAILGATE -->
+
+						<!-- LIGHT -->
+						<img class="hide" id="fj40-backLedbarSIDE" src="img/fj40-backLedbar.png" alt="">
+						<!-- END LIGHT -->
+					</a>
+				</div>
+		</li>
+
+	</ul>
+
+	<!-- END BAR -->
+
+<!-- FIN FJ40 -->
+
+
+
+
+<!-- FJ44 SIDE -->
+
+	<!-- SIDE -->
+
+		<!-- BODY -->
+		<img class="hide" id="imgfj44-1" src="img/fj44-1.png" alt="">
+		<img class="hide" id="imgfj44-2" src="img/fj44-2.png" alt="">
+		<img class="hide" id="imgfj44-3" src="img/fj44-3.png" alt="">
+		<img class="hide" id="imgfj44-4" src="img/fj44-4.png" alt="">
+		<img class="hide" id="imgfj44-5" src="img/fj44-5.png" alt="">
+		<!-- END BODY -->
+
+		<!-- COLORS -->
+		<img class="hide" id="imgfj44-n" src="img/fj44-negro.png" alt="">
+		<img class="hide" id="imgfj44-a" src="img/fj44-azul.png" alt="">
+		<img class="hide" id="imgfj44-ac" src="img/fj44-azulclaro.png" alt="">
+		<img class="hide" id="imgfj44-bl" src="img/fj44-blanco.png" alt="">
+		<img class="hide" id="imgfj44-g" src="img/fj44-gris.png" alt="">
+		<img class="hide" id="imgfj44-oc" src="img/fj44-ocre.png" alt="">
+		<img class="hide" id="imgfj44-o" src="img/fj44-orange.png" alt="">
+		<img class="hide" id="imgfj44-v" src="img/fj44-verde.png" alt="">
+		<!-- FIN COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj44-tc" src="img/fj44-TechoCompleto.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj44-Wheel" src="img/fj44-Oldschool.png" alt="">
+		<img class="hide" id="fj44-Tire" src="img/fj44-MT.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- ACCESSORIES -->
+		<img class="hide" id="fj44-PStep" src="img/fj44-poweredStep.png" alt="">
+		<img class="hide" id="fj44-PStep4" src="img/fj44-poweredStep4.png" alt="">
+		<!-- FIN ACCESSORIES -->
+
+	<!-- END SIDE -->
+
+	<!-- FRONT -->
+
+		<!-- BODY -->
+		<img class="hide" id="imgfj44front-1" src="img/fj44-front1.png" alt="" style="">
+		<img class="hide" id="imgfj44front-2" src="img/fj44-front2.png" alt="" style="">
+		<img class="hide" id="imgfj44front-3" src="img/fj44-front3.png" alt="" style="">
+		<img class="hide" id="imgfj44front-4" src="img/fj44-front4.png" alt="" style="">
+		<!-- END BODY -->
+
+		<!-- COLORS -->
+		<img class="hide" id="imgfj44front-n" src="img/fj44-frontNegro.png" alt="">
+		<img class="hide" id="imgfj44front-a" src="img/fj44-frontAzul.png" alt="">
+		<img class="hide" id="imgfj44front-ac" src="img/fj44-frontAzulclaro.png" alt="">
+		<img class="hide" id="imgfj44front-bl" src="img/fj44-frontBlanco.png" alt="">
+		<img class="hide" id="imgfj44front-g" src="img/fj44-frontGris.png" alt="">
+		<img class="hide" id="imgfj44front-oc" src="img/fj44-frontOcre.png" alt="">
+		<img class="hide" id="imgfj44front-o" src="img/fj44-frontOrange.png" alt="">
+		<img class="hide" id="imgfj44front-v" src="img/fj44-frontVerde.png" alt="">
+		<!-- END COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj44-frontTechocompleto" src="img/fj44-frontTechocompleto.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj44-frontTire" src="img/fj44-frontMT.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- LIGHT -->
+		<img class="hide" id="fj44-frontLedbar" src="img/fj44-frontLedbar.png" alt="">
+		<img class="hide" id="fj44-frontHL" src="img/fj44-frontLedHeadlight.png" alt="">
+		<!-- END LIGHT -->
+
+	<!-- END FRONT -->
+
+	<!-- BACK -->
+
+		<!-- BODY -->
+		<img class="hide" id="imgfj44back-1" src="img/fj44-back1.png" alt="" style="">
+		<img class="hide" id="imgfj44back-2" src="img/fj44-back2.png" alt="" style="">
+		<img class="hide" id="imgfj44back-3" src="img/fj44-back3.png" alt="" style="">
+		<img class="hide" id="imgfj44back-4" src="img/fj44-back4.png" alt="" style="">
+		<img class="hide" id="imgfj44back-5" src="img/fj44-back5.png" alt="" style="">
+		<img class="hide" id="imgfj44back-6" src="img/fj44-back6.png" alt="" style="">
+		<!-- END BODY -->
+
+		<!-- COLORS -->
+		<img class="hide" id="imgfj44back-n" src="img/fj44-backNegro.png" alt="" style="">
+		<img class="hide" id="imgfj44back-a" src="img/fj44-backAzul.png" alt="">
+		<img class="hide" id="imgfj44back-ac" src="img/fj44-backAzulclaro.png" alt="">
+		<img class="hide" id="imgfj44back-bl" src="img/fj44-backBlanco.png" alt="">
+		<img class="hide" id="imgfj44back-g" src="img/fj44-backGris.png" alt="">
+		<img class="hide" id="imgfj44back-oc" src="img/fj44-backOcre.png" alt="">
+		<img class="hide" id="imgfj44back-o" src="img/fj44-backOrange.png" alt="">
+		<img class="hide" id="imgfj44back-v" src="img/fj44-backVerde.png" alt="">
+		<!-- END COLORS -->
+
+		<!-- ROOF -->
+		<img class="hide" id="fj44-backTechocompleto" src="img/fj44-backTechocompleto.png" alt="">
+		<!-- END ROOF -->
+
+		<!-- WHEEL/TIRE -->
+		<img class="hide" id="fj44-backWheel" src="img/fj44-backOldschool.png" alt="">
+		<img class="hide" id="fj44-backTire" src="img/fj44-backMT1.png" alt="">
+		<img class="hide" id="fj44-backTire2" src="img/fj44-backMT2.png" alt="">
+		<!-- END WHEEL/TIRE -->
+
+		<!-- TAILGATE -->
+		<img class="hide" id="fj44-backDoor" src="img/fj44-backDoor.png" alt="">
+		<!-- END TAILGATE -->
+
+		<!-- LIGHT -->
+		<img class="hide" id="fj44-backLedbar" src="img/fj44-backLedbar.png" alt="">
+		<!-- END LIGHT -->
+
+	<!-- END BACK -->
+
+	<!-- BAR -->
+
+	<ul>
+		<li id="fj44side" class="active">
+					<div class="side" >
+						<a href="#" >
+							<img class="hide" id="imgfj44-1SIDE" src="img/fj44-1.png" alt="">
+							<img class="hide" id="imgfj44-2SIDE" src="img/fj44-2.png" alt="">
+							<img class="hide" id="imgfj44-3SIDE" src="img/fj44-3.png" alt="">
+							<img class="hide" id="imgfj44-4SIDE" src="img/fj44-4.png" alt="">
+							<img class="hide" id="imgfj44-5SIDE" src="img/fj44-5.png" alt="">
+							<!-- COLORS -->
+							<img class="hide" id="imgfj44-nSIDE" src="img/fj44-negro.png" alt="">
+							<img class="hide" id="imgfj44-aSIDE" src="img/fj44-azul.png" alt="">
+							<img class="hide" id="imgfj44-acSIDE" src="img/fj44-azulclaro.png" alt="">
+							<img class="hide" id="imgfj44-blSIDE" src="img/fj44-blanco.png" alt="">
+							<img class="hide" id="imgfj44-gSIDE" src="img/fj44-gris.png" alt="">
+							<img class="hide" id="imgfj44-ocSIDE" src="img/fj44-ocre.png" alt="">
+							<img class="hide" id="imgfj44-oSIDE" src="img/fj44-orange.png" alt="">
+							<img class="hide" id="imgfj44-vSIDE" src="img/fj44-verde.png" alt="">
+							<!-- FIN COLORS -->
+
+							<!-- ROOF -->
+							<img class="hide" id="fj44-tcSIDE" src="img/fj44-TechoCompleto.png" alt="">
+							<!-- END ROOF -->
+
+							<!-- WHEEL/TIRE -->
+							<img class="hide" id="fj44-WheelSIDE" src="img/fj44-Oldschool.png" alt="">
+							<img class="hide" id="fj44-TireSIDE" src="img/fj44-MT.png" alt="">
+							<!-- END WHEEL/TIRE -->
+
+							<!-- ACCESSORIES -->
+							<img class="hide" id="fj44-PStepSIDE" src="img/fj44-poweredStep.png" alt="">
+							<img class="hide" id="fj44-PStep4SIDE" src="img/fj44-poweredStep4.png" alt="">
+							<!-- FIN ACCESSORIES -->
+						</a>
+					</div>
+		</li>
+		<li id="fj44front" class="">
+				<div class="front" >
+					<a href="#" >
+						<img class="hide" id="imgfj44frontSIDE-1" src="img/fj44-front1.png" alt="" style="">
+						<img class="hide" id="imgfj44frontSIDE-2" src="img/fj44-front2.png" alt="" style="">
+						<img class="hide" id="imgfj44frontSIDE-3" src="img/fj44-front3.png" alt="" style="">
+						<img class="hide" id="imgfj44frontSIDE-4" src="img/fj44-front4.png" alt="" style="">
+						<!-- COLORS -->
+						<img class="hide" id="imgfj44frontSIDE-n" src="img/fj44-frontNegro.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-a" src="img/fj44-frontAzul.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-ac" src="img/fj44-frontAzulclaro.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-bl" src="img/fj44-frontBlanco.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-g" src="img/fj44-frontGris.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-oc" src="img/fj44-frontOcre.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-o" src="img/fj44-frontOrange.png" alt="">
+						<img class="hide" id="imgfj44frontSIDE-v" src="img/fj44-frontVerde.png" alt="">
+						<!-- END COLORS -->
+
+						<!-- ROOF -->
+						<img class="hide" id="fj44-frontTechocompletoSIDE" src="img/fj44-frontTechocompleto.png" alt="">
+						<!-- END ROOF -->
+
+						<!-- WHEEL/TIRE -->
+						<img class="hide" id="fj44-frontTireSIDE" src="img/fj44-frontMT.png" alt="">
+						<!-- END WHEEL/TIRE -->
+
+						<!-- LIGHT -->
+						<img class="hide" id="fj44-frontLedbarSIDE" src="img/fj44-frontLedbar.png" alt="">
+						<img class="hide" id="fj44-frontHLSIDE" src="img/fj44-frontLedHeadlight.png" alt="">
+						<!-- END LIGHT -->
+					</a>
+				</div>
+		</li>
+		<li id="fj44back" class="">
+				<div class="back"  >
+					<a href="#" >
+						<img class="hide" id="imgfj44backSIDE-1" src="img/fj44-back1.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-2" src="img/fj44-back2.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-3" src="img/fj44-back3.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-4" src="img/fj44-back4.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-5" src="img/fj44-back5.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-6" src="img/fj44-back6.png" alt="" style="">
+						<!-- COLORS -->
+						<img class="hide" id="imgfj44backSIDE-n" src="img/fj44-backNegro.png" alt="" style="">
+						<img class="hide" id="imgfj44backSIDE-a" src="img/fj44-backAzul.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-ac" src="img/fj44-backAzulclaro.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-bl" src="img/fj44-backBlanco.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-g" src="img/fj44-backGris.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-oc" src="img/fj44-backOcre.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-o" src="img/fj44-backOrange.png" alt="">
+						<img class="hide" id="imgfj44backSIDE-v" src="img/fj44-backVerde.png" alt="">
+						<!-- END COLORS -->
+
+						<!-- ROOF -->
+						<img class="hide" id="fj44-backTechocompletoSIDE" src="img/fj44-backTechocompleto.png" alt="">
+						<!-- END ROOF -->
+
+						<!-- WHEEL/TIRE -->
+						<img class="hide" id="fj44-backWheelSIDE" src="img/fj44-backOldschool.png" alt="">
+						<img class="hide" id="fj44-backTireSIDE" src="img/fj44-backMT1.png" alt="">
+						<img class="hide" id="fj44-backTire2SIDE" src="img/fj44-backMT2.png" alt="">
+						<!-- END WHEEL/TIRE -->
+
+						<!-- TAILGATE -->
+						<img class="hide" id="fj44-backDoorSIDE" src="img/fj44-backDoor.png" alt="">
+						<!-- END TAILGATE -->
+
+						<!-- LIGHT -->
+						<img class="hide" id="fj44-backLedbarSIDE" src="img/fj44-backLedbar.png" alt="">
+						<!-- END LIGHT -->
+					</a>
+				</div>
+		</li>
+	</ul>
+
+	<!-- END BAR -->
+
+<!-- END FJ44 SIDE -->
+
+
+</div>
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="event.js"></script>
+
+</body>
+</html>
